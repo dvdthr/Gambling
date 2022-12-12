@@ -1,5 +1,5 @@
 import java.util.Random;
-import java.util.Scanner;
+
 public class Roulette {
 	private int number;
 	private String color;
@@ -21,12 +21,15 @@ public class Roulette {
 		this.color = color;
 	}
 
+	public Roulette () {
+	}
+
 	public double deposit(double depositAmount){
 		this.balance += depositAmount;
 		return balance;
 	}
 
-	public void roll(){
+	public String roll(){
 		Random rand = new Random();
 		int intRandom = rand.nextInt(37);
 		int colorRandom = rand.nextInt(99);
@@ -43,6 +46,7 @@ public class Roulette {
 			this.color = green;
 		}
 		System.out.println(this.color + " " + intRandom);
+		return this.color + intRandom;
 	}
 
 	public void bet(int betAmount, String color){

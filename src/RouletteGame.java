@@ -7,7 +7,7 @@ public class RouletteGame {
 		int startingBalance = input.nextInt();
 		int betRound = 0;
 		String choice = "";
-
+		Roulette casino = new Roulette();
 
 		System.out.println("You have $" + startingBalance);
 		while (choice.equals("")) {
@@ -35,23 +35,25 @@ public class RouletteGame {
 			System.out.println("Which color do you want to bet on? (red, black, green)");
 			String userColor = input.next();
 			userColor.toLowerCase();
-			Roulette roulette = new Roulette(userColor);
+
 
 			System.out.println("How much do you want to bet?");
 			betRound = input.nextInt();
 			if (betRound > startingBalance) {
 				while (betRound > startingBalance) {
-					System.out.println("Available balance: " + startingBalance + "You don't have enough money! Please enter a lower value.");
+					System.out.println("Available balance: " + startingBalance + " You don't have enough money! Please enter a lower value.");
 					betRound = input.nextInt();
 				}
 			}
 
 			System.out.println("Rolling.");
-			roulette.roll();
-			if (color.eqa){
-				System.out.println();
-
-
+			casino.roll();
+			if (casino.equals(userColor)) {
+				System.out.println("winner");
+			}
+			else {
+				System.out.println("loser");
+			}
 		}
 
 	}
