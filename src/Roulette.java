@@ -1,12 +1,22 @@
 import java.util.Random;
 import java.util.Scanner;
 public class Roulette {
-	private double number;
+	private int number;
 	private String color;
 	private double balance;
+	final int WINMULTIPLIER = 2;
+	final int GREENMULTIPLIER = 35;
 
-	public Roulette(double number, String color){
+	public Roulette(int number, String color){
 		this.number = number;
+		this.color = color;
+
+	}
+	public Roulette(int number){
+		this.number = number;
+	}
+
+	public Roulette (String color){
 		this.color = color;
 	}
 
@@ -15,21 +25,26 @@ public class Roulette {
 		return balance;
 	}
 
-	public String roll(){
+	public void roll(){
 		Random rand = new Random();
 		int intRandom = rand.nextInt(37);
-		int colorRandom = rand.nextInt(2);
-		if (colorRandom == 1){
-			this.color = "Black ";
-			return color;
+		int colorRandom = rand.nextInt(99);
+		String black = "black";
+		String red = "red";
+		String green = "green";
+		if (colorRandom >= 0 && colorRandom <=49){
+			this.color = black;
 		}
-		if (colorRandom == 2){
-			this.color = "Red ";
-			return color;
+		else if (colorRandom <=98 && colorRandom > 49){
+			this.color = red;
 		}
-		System.out.println(this.color + intRandom);
-		return color + intRandom;
+		else if (colorRandom > 98) {
+			this.color = green;
+		}
+		System.out.println(this.color + " " + intRandom);
 	}
 
+	public void Bet(int betAmount){
 
+	}
 }
