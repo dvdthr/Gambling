@@ -4,6 +4,7 @@ public class Roulette {
 	private int number;
 	private String color;
 	private double balance;
+	private int betAmount;
 	final int WINMULTIPLIER = 2;
 	final int GREENMULTIPLIER = 35;
 
@@ -44,7 +45,8 @@ public class Roulette {
 		System.out.println(this.color + " " + intRandom);
 	}
 
-	public void Bet(int betAmount){
-
+	public void bet(int betAmount, String color){
+		this.color = color;
+		this.betAmount = betAmount;
 	}
 }
