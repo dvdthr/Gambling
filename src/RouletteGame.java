@@ -73,11 +73,3 @@ public class RouletteGame {
 		System.out.println("Cashed out with $" + startingBalance + " after round " + counter);
 	}
 }
-
-/* have user enter deposit amount
-* as them whether they want to bet on a color or a number
-* having a running count of their balance
-* have methods to add money
-* have method to cash out
-* have counter of money stolen
-* have method for percentage of games won or lost*/
