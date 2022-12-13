@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0405d790-9244-4880-b165-963face80711" name="Changes" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Roulette.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Roulette.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RouletteGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RouletteGame.java" afterDir="false" />
     </list>
@@ -19,6 +20,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="6851c76f-2691-490d-812d-dc53db8926ee" />
